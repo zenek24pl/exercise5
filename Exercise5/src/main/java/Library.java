@@ -15,11 +15,10 @@ public class Library {
 	        	Database.dropTabless();
 				Database.createTableStudent();
 				Database.createTableFaculty();
-				Database.createTableClass();
+				Database.createTableClass();;
 				Database.createTableEnrollment();
-				Database.dropConnection();
-				
-			/*	Database.insertToStudent("John Smith","male",23,2);
+								
+				Database.insertToStudent("John Smith","male",23,2);
 				Database.insertToStudent("Rebecca Milson","female",27,3);
 				Database.insertToStudent("George Heartbreaker","male",19,1);
 				Database.insertToStudent("Deepika Chopra","female",25,3);
@@ -45,12 +44,13 @@ public class Library {
 				Database.insertToClass("English grammar", 103);
 				Database.insertToClass("From Plato to Kant", 101);
 
-
-				Database.queryFacultyWithoutSigns();
 				Database.queryStudents();
-				Database.queryWomensEgsistial();
 				Database.queryPeopleWithoutSubject();
-*/
+				Database.queryFacultyWithoutSigns();
+				Database.queryWomensEgsistial();
+				
+				Database.dropConnection();
+
 
 				
 			} catch (SQLException e) {
